@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Piesek</title>
+ <style>
+ </style>
+
+</head>
+
+<body>
+  <button id="myButton">
+    <img src="https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649_960_720.jpg" alt="Corgi">
+  </button>
+
+  <script>
+    var button = document.getElementById("myButton");
+    var clickCount = 0;
+    var url1 = "http://wsb.pl";
+    var url2 = "https://vuejs.org/";
+
+    button.onclick = function() {
+      clickCount++;
+      if (clickCount % 2 === 0) {
+        window.open(url2, '_blank');
+      } else {
+        window.open(url1, '_blank');
+      }
+    };
+  </script>
+</body>
+</html>
